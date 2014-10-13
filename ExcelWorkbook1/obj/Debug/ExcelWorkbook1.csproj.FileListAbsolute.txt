@@ -1,0 +1,17 @@
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.ActionsPaneControl1.resources
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.ActionsPaneControl2.resources
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.Properties.Resources.resources
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.Ribbon1.resources
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.csproj.GenerateResource.Cache
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\ExcelWorkbook1.dll
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\ExcelWorkbook1.pdb
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\ExcelWorkbook1.dll.manifest
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\ExcelWorkbook1.vsto
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\ExcelWorkbook1.xlsx
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.dll
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.pdb
+C:\Users\Ruben\Documents\Visual Studio 2013\Projects\ExcelAddIn1\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.csprojResolveAssemblyReference.cache
