@@ -64,6 +64,17 @@ namespace ExcelWorkbook1
 
         private void dropDown1_SelectionChanged(object sender, RibbonControlEventArgs e)
         {
+            Filter();
+        }
+
+        private void cbKGR_Click(object sender, RibbonControlEventArgs e)
+        {
+            Filter();
+
+        }
+
+        private void Filter()
+        {
             Microsoft.Office.Interop.Excel.Worksheet activeWorksheet = ((Microsoft.Office.Interop.Excel.Worksheet)Globals.ThisWorkbook.Application.ActiveSheet);
 
             Microsoft.Office.Interop.Excel.Range usedRange = activeWorksheet.UsedRange;

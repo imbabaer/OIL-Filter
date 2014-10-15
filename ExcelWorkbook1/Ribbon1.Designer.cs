@@ -1,4 +1,5 @@
-﻿namespace ExcelWorkbook1
+﻿using System.Collections.Generic;
+namespace ExcelWorkbook1
 {
     partial class Ribbon1 : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
@@ -34,6 +35,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            //List<string> wer = testNamedRangeFind();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl1 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl2 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl3 = this.Factory.CreateRibbonDropDownItem();
@@ -102,6 +104,7 @@
             // 
             this.cbKGR.Label = "KGR";
             this.cbKGR.Name = "cbKGR";
+            this.cbKGR.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.cbKGR_Click);
             // 
             // Ribbon1
             // 
@@ -118,6 +121,32 @@
 
         }
 
+
+        public List<string> testNamedRangeFind()
+        {
+            Microsoft.Office.Interop.Excel.Workbook m_workbook;
+            var _1 = Globals.ThisWorkbook.Application;
+            m_workbook = _1.ActiveWorkbook;
+            int i = m_workbook.Names.Count;
+            List<string> wer = new List<string>();
+
+            if (i != 0)
+            {
+                foreach (Microsoft.Office.Interop.Excel.Name name in m_workbook.Names)
+                {
+                    string value = name.Value;
+                    //Sheet and Cell e.g. =Sheet1!$A$1 or =#REF!#REF! if refers to nothing
+                    string linkName = name.Name;
+                    //gives the name of the link e.g. sales
+                    if (value == "Wer")
+                    {
+                        wer.Add(name.RefersToRange.Cells.get_Address(true, true, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1));
+                    }
+                }
+            }
+            return wer;
+        }
+
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
@@ -129,6 +158,7 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropDown1;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox cbKGR;
     }
+
 
     partial class ThisRibbonCollection
     {

@@ -1,0 +1,9 @@
+filter:
+zeitraum
+#Nummer
+bereich
+
+
+
+
+Verschiedene workingsheets definieren "Wer", "Bereich" etc.
