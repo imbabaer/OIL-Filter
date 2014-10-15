@@ -14,16 +14,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC-Manifestoptionen
-          Wenn Sie die Zugangsebene für das Windows-Benutzerkonto ändern möchten, ersetzen Sie den 
-          requestedExecutionLevel-Knoten durch eines der folgenden Elemente.
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         Löschen Sie den requestedExecutionLevel-Knoten, wenn Sie 
-         zum Gewährleisten der Abwärtskompatibilität die Datei- und Registrierungsvirtualisierung verwenden möchten.
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -73,18 +73,68 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="mscorlib" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationFramework" version="4.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
       <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelWorkbook1.dll" size="27648">
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.DataSetExtensions" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Drawing" version="4.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Windows.Forms" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Xml.Linq" version="4.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ExcelWorkbook1.dll" size="25088">
       <assemblyIdentity name="ExcelWorkbook1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JYW0qLH4w185bg+EbMZrqKvNn+1H3ncfdpe4kFuWqGk=</dsig:DigestValue>
+        <dsig:DigestValue>hMdUnD5ROQ3Pv6IRQBPiM4L8R4jOBjh67LbI6QCSDcY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -138,4 +188,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=RLSSD\Ruben" issuerKeyHash="ac8ff2f778558363ab7b470eba1adff6a3b35fcb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fiZ/Oz+mLfjXviri0fwDwt32hBgR067JPQJjo79dg00=</DigestValue></Reference></SignedInfo><SignatureValue>jcIYNCfjhqzBiILhEcDkLwaw9m3YA1qM9N36TSHnUDmIVqFdTdHWrxcRxBaEQMo2a171j3MHW7aPUslaTCbWIt6osnvXFKRbQElGYMrR1Bc68SGC9czuYXvM1F6pdgQM7TD3geiqYSx7LAU9RFJyU8yLW5tTLie+TNK/DHOEuTo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBcc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4d835dbfa363023dc9aed3111884f6ddc203fcd1e22abed7f82da63f3b7f267e" Description="" Url=""><as:assemblyIdentity name="ExcelWorkbook1.dll" version="1.0.0.0" publicKeyToken="e6ce8798c5a937a3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RLSSD\Ruben</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hRoRKcVZ+obintEzOZ1xBRAm8CihtnS3OMLteqlLJGI=</DigestValue></Reference></SignedInfo><SignatureValue>qgVz3nOOMwSTJCZcxquJKjQD2rW+bVS3ItrmtZV0xQen5JT87HiH2NS9FpCxrVtBqxBmRLbeFIrltK7tUiFMBlKgRptHs/veNIUruXMWFSPZjkw5ykIoZwnICSD61gCxJx+X8u2NLzkMkhkOFdaLLPa4dbd7u1LTfQjsttdovxw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBcc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQZIPpkAdZrphFUH7ebkQ1KzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAUgBMAFMAUwBEAFwAUgB1AGIAZQBuMB4XDTE0MTAxMTIzMjgwNVoXDTE1MTAxMjA1MjgwNVowITEfMB0GA1UEAx4WAFIATABTAFMARABcAFIAdQBiAGUAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBccCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDEpEeux8pzCdNVab1zhV9AfExgUk3H6jjczQmZDiSm9lEo2CCsrqm3Jhlv1Zhe4BimSzuphLsoiVVEMX8D6cK6aFICcgUUIglCrpm9e0OmaafUstdkq5ytWBWuV/ItuQAT5WcvL1AupREdXsUWGlMNkRNodwoWhWHIoVcO02LIiQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=RLSSD\Ruben" issuerKeyHash="ac8ff2f778558363ab7b470eba1adff6a3b35fcb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>84Dzc9puTNuDfybwWXCj75qglCK/YankujvbjWkX7cY=</DigestValue></Reference></SignedInfo><SignatureValue>YSCotTMDJ+50UOeLkpYwnwl5/ilsEOXqIbv8aT89yoeb2c3Ux6O6UMM5ix61axMkhrBCcvhA4bLwY3GbqLsNxpzXRTnenOwV58qZDJrgaKBMCbpafNQ5LJsP0PeDSC/vxyvXHG+XmUHiGNT4TuvNzFe3StHm+t9igj3AD8QUfoY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBcc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c6ed17698ddb3bbae4a961bf2294a09aefa37059f0267f83db4c6eda73f380f3" Description="" Url=""><as:assemblyIdentity name="ExcelWorkbook1.dll" version="1.0.0.0" publicKeyToken="e6ce8798c5a937a3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RLSSD\Ruben</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PB0MJOMAYsEWj+xTIBXBMogCPvsbRaQ7LYUgO9zwNXE=</DigestValue></Reference></SignedInfo><SignatureValue>HIY16jmOjqIdt4v80FbCbuZoV+/m9ZUQCJeUtvk6N295HPXzEvsquV1UfsD3PWa6IAkbkbTQ87TQ9lUpNnJIxEHJqEobICqcXRNpejfq7eEyzDLry/0Ib7PSCU/Qa2LkouUrBFG5FTVQtgNf5pD9tXzInCYsZp/mW/VEE5Bm7ng=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBcc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQZIPpkAdZrphFUH7ebkQ1KzANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYAUgBMAFMAUwBEAFwAUgB1AGIAZQBuMB4XDTE0MTAxMTIzMjgwNVoXDTE1MTAxMjA1MjgwNVowITEfMB0GA1UEAx4WAFIATABTAFMARABcAFIAdQBiAGUAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA9e2p/YOPEQApsFpu5ino8C8+axrBUDWdfy4cyRcThUlR76gfFtazn6CXgmFY6/43I0vcIpV6cEcM7JLZBJupdbtYmjFHXVm7soUtYEgrwH+c6rqyprVEiUPl5xEy1NEWJcvb45m4X+FaPUTOUo61BUuaNyOfei8PXKhhOWqzBccCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDEpEeux8pzCdNVab1zhV9AfExgUk3H6jjczQmZDiSm9lEo2CCsrqm3Jhlv1Zhe4BimSzuphLsoiVVEMX8D6cK6aFICcgUUIglCrpm9e0OmaafUstdkq5ytWBWuV/ItuQAT5WcvL1AupREdXsUWGlMNkRNodwoWhWHIoVcO02LIiQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

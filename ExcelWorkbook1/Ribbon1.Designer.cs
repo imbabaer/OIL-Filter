@@ -122,30 +122,30 @@ namespace ExcelWorkbook1
         }
 
 
-        public List<string> testNamedRangeFind()
-        {
-            Microsoft.Office.Interop.Excel.Workbook m_workbook;
-            var _1 = Globals.ThisWorkbook.Application;
-            m_workbook = _1.ActiveWorkbook;
-            int i = m_workbook.Names.Count;
-            List<string> wer = new List<string>();
+        //public List<string> testNamedRangeFind()
+        //{
+        //    Microsoft.Office.Interop.Excel.Workbook m_workbook;
+        //    var _1 = Globals.ThisWorkbook.Application;
+        //    m_workbook = _1.ActiveWorkbook;
+        //    int i = m_workbook.Names.Count;
+        //    List<string> wer = new List<string>();
 
-            if (i != 0)
-            {
-                foreach (Microsoft.Office.Interop.Excel.Name name in m_workbook.Names)
-                {
-                    string value = name.Value;
-                    //Sheet and Cell e.g. =Sheet1!$A$1 or =#REF!#REF! if refers to nothing
-                    string linkName = name.Name;
-                    //gives the name of the link e.g. sales
-                    if (value == "Wer")
-                    {
-                        wer.Add(name.RefersToRange.Cells.get_Address(true, true, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1));
-                    }
-                }
-            }
-            return wer;
-        }
+        //    if (i != 0)
+        //    {
+        //        foreach (Microsoft.Office.Interop.Excel.Name name in m_workbook.Names)
+        //        {
+        //            string value = name.Value;
+        //            //Sheet and Cell e.g. =Sheet1!$A$1 or =#REF!#REF! if refers to nothing
+        //            string linkName = name.Name;
+        //            //gives the name of the link e.g. sales
+        //            if (value == "Wer")
+        //            {
+        //                wer.Add(name.RefersToRange.Cells.get_Address(true, true, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1));
+        //            }
+        //        }
+        //    }
+        //    return wer;
+        //}
 
         #endregion
 

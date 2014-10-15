@@ -2,8 +2,25 @@ filter:
 zeitraum
 #Nummer
 bereich
+Datum-bereich
 
 
-
+Export von Excel nach Outlook-Aufgaben den Betreff parametrisieren.
 
 Verschiedene workingsheets definieren "Wer", "Bereich" etc.
+
+Wenn "Erledigt am" befüllt, Status auf erledigt stezten
+
+Farben:
+offen > 3 Tage = gelb
+offen <= 3 TAge = orange
+überfällig = rot
+
+erledigt innerhalb Frist = hellgrün
+erledigt nach Frist = dunkelgrün
+
+Prio raus.
+
+Wenn anders sortiert, sollte #Number auch mitgenommen werden.
+
+Höhe sollte immer auf den Inhalt angepasst werden
