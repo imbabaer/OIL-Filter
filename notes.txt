@@ -4,8 +4,10 @@ zeitraum
 bereich
 Datum-bereich
 
+Verschiedene workingsheets definieren "Wer", "Bereich" etc.
 
 Export von Excel nach Outlook-Aufgaben den Betreff parametrisieren.
+
 
 Wenn "Erledigt am" befüllt, Status auf erledigt stezten
 
@@ -13,7 +15,6 @@ Farben:
 offen > 3 Tage = gelb
 offen <= 3 TAge = orange
 überfällig = rot
-
 erledigt innerhalb Frist = hellgrün
 erledigt nach Frist = dunkelgrün
 
@@ -21,6 +22,19 @@ Prio raus.
 
 Wenn anders sortiert, sollte #Number auch mitgenommen werden.
 
+_____________________________________
 Höhe sollte immer auf den Inhalt angepasst werden
 
 Bei allem drop down menus zum filtern, außer bei Beschreibung und Bereich.
+
+Hallo Kati,
+die Zeilenhöhe gehört zu der Zeile und wenn sortiert wird, wird die Zeilenhöhe mit übernommen. Irgendetwas läuft bei dir falsch. Ich habe jetzt schon einiges probiert, aber ich kein dein Verhalten nicht nachstellen.
+Gehe mit Alt+F11 in den VBA-Editor => Einfügen => Modul und füge folgenden Code in das Codefenster ein:
+Sub Zeilenhoehe()
+With ActiveSheet.UsedRange
+   .EntireRow.AutoFit
+End With
+End Sub
+Starte das Makro nach dem Sortieren.
+Mit freundlichen Grüßen
+Claus
