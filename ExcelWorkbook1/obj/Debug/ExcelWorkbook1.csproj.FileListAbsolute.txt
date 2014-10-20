@@ -47,3 +47,5 @@ C:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.Ribbon1.r
 C:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.csproj.GenerateResource.Cache
 C:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.dll
 C:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\obj\Debug\ExcelWorkbook1.pdb
+D:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\SoftwareProjects\OIL-Filter\ExcelWorkbook1\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml

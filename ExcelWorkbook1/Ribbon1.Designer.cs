@@ -35,36 +35,98 @@ namespace ExcelWorkbook1
         /// </summary>
         private void InitializeComponent()
         {
-            //List<string> wer = testNamedRangeFind();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl1 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl2 = this.Factory.CreateRibbonDropDownItem();
             Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl3 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl4 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl5 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl6 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl7 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl8 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl9 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl10 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl11 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl12 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl13 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl14 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl15 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl16 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl17 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl18 = this.Factory.CreateRibbonDropDownItem();
             this.tab1 = this.Factory.CreateRibbonTab();
-            this.group1 = this.Factory.CreateRibbonGroup();
-            this.button1 = this.Factory.CreateRibbonButton();
-            this.button2 = this.Factory.CreateRibbonButton();
-            this.toggleButton1 = this.Factory.CreateRibbonToggleButton();
             this.group2 = this.Factory.CreateRibbonGroup();
             this.dropDown1 = this.Factory.CreateRibbonDropDown();
             this.cbKGR = this.Factory.CreateRibbonCheckBox();
+            this.button1 = this.Factory.CreateRibbonButton();
+            this.button2 = this.Factory.CreateRibbonButton();
+            this.toggleButton1 = this.Factory.CreateRibbonToggleButton();
+            this.group1 = this.Factory.CreateRibbonGroup();
+            this.ebProjectName = this.Factory.CreateRibbonEditBox();
             this.tab1.SuspendLayout();
-            this.group1.SuspendLayout();
             this.group2.SuspendLayout();
+            this.group1.SuspendLayout();
             // 
             // tab1
             // 
             this.tab1.Groups.Add(this.group1);
             this.tab1.Groups.Add(this.group2);
-            this.tab1.Label = "MyTab";
+            this.tab1.Label = "KGR OPL";
             this.tab1.Name = "tab1";
             // 
-            // group1
+            // group2
             // 
-            this.group1.Items.Add(this.button1);
-            this.group1.Items.Add(this.button2);
-            this.group1.Items.Add(this.toggleButton1);
-            this.group1.Label = "ActionPaneManager";
-            this.group1.Name = "group1";
+            this.group2.Items.Add(this.dropDown1);
+            this.group2.Items.Add(this.cbKGR);
+            this.group2.Label = "Zuständig";
+            this.group2.Name = "group2";
+            // 
+            // dropDown1
+            // 
+            ribbonDropDownItemImpl1.Label = "Alber, Kirsten";
+            ribbonDropDownItemImpl2.Label = "BauA";
+            ribbonDropDownItemImpl3.Label = "Eisenbraun, Frank";
+            ribbonDropDownItemImpl4.Label = "KGR";
+            ribbonDropDownItemImpl5.Label = "KiGaA";
+            ribbonDropDownItemImpl6.Label = "Killgus, Christoph";
+            ribbonDropDownItemImpl7.Label = "König, Angela";
+            ribbonDropDownItemImpl8.Label = "Kurfess, David";
+            ribbonDropDownItemImpl9.Label = "Luedecke, Heike";
+            ribbonDropDownItemImpl10.Label = "Luikart, Ulrike";
+            ribbonDropDownItemImpl11.Label = "Müller, Anne";
+            ribbonDropDownItemImpl12.Label = "Müller, Ruben";
+            ribbonDropDownItemImpl13.Label = "Scheible, David";
+            ribbonDropDownItemImpl14.Label = "Schöck, Michael";
+            ribbonDropDownItemImpl15.Label = "Stephan, Susanne";
+            ribbonDropDownItemImpl16.Label = "Streich, Andreas";
+            ribbonDropDownItemImpl17.Label = "VerwA";
+            ribbonDropDownItemImpl18.Label = "Alle anzeigen";
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl1);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl2);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl3);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl4);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl5);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl6);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl7);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl8);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl9);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl10);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl11);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl12);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl13);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl14);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl15);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl16);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl17);
+            this.dropDown1.Items.Add(ribbonDropDownItemImpl18);
+            this.dropDown1.Label = "Wer";
+            this.dropDown1.Name = "dropDown1";
+            this.dropDown1.SelectionChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.dropDown1_SelectionChanged);
+            // 
+            // cbKGR
+            // 
+            this.cbKGR.Label = "KGR";
+            this.cbKGR.Name = "cbKGR";
+            this.cbKGR.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.cbKGR_Click);
             // 
             // button1
             // 
@@ -81,30 +143,17 @@ namespace ExcelWorkbook1
             this.toggleButton1.Label = "hide action pane";
             this.toggleButton1.Name = "toggleButton1";
             // 
-            // group2
+            // group1
             // 
-            this.group2.Items.Add(this.dropDown1);
-            this.group2.Items.Add(this.cbKGR);
-            this.group2.Label = "Zuständig";
-            this.group2.Name = "group2";
+            this.group1.Items.Add(this.ebProjectName);
+            this.group1.Label = "Projekt";
+            this.group1.Name = "group1";
             // 
-            // dropDown1
+            // ebProjectName
             // 
-            ribbonDropDownItemImpl1.Label = "David";
-            ribbonDropDownItemImpl2.Label = "Ruben";
-            ribbonDropDownItemImpl3.Label = "Alle anzeigen";
-            this.dropDown1.Items.Add(ribbonDropDownItemImpl1);
-            this.dropDown1.Items.Add(ribbonDropDownItemImpl2);
-            this.dropDown1.Items.Add(ribbonDropDownItemImpl3);
-            this.dropDown1.Label = "Wer";
-            this.dropDown1.Name = "dropDown1";
-            this.dropDown1.SelectionChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.dropDown1_SelectionChanged);
-            // 
-            // cbKGR
-            // 
-            this.cbKGR.Label = "KGR";
-            this.cbKGR.Name = "cbKGR";
-            this.cbKGR.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.cbKGR_Click);
+            this.ebProjectName.Label = "Name";
+            this.ebProjectName.Name = "ebProjectName";
+            this.ebProjectName.TextChanged += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.editBox1_TextChanged);
             // 
             // Ribbon1
             // 
@@ -114,49 +163,25 @@ namespace ExcelWorkbook1
             this.Load += new Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler(this.Ribbon1_Load);
             this.tab1.ResumeLayout(false);
             this.tab1.PerformLayout();
-            this.group1.ResumeLayout(false);
-            this.group1.PerformLayout();
             this.group2.ResumeLayout(false);
             this.group2.PerformLayout();
+            this.group1.ResumeLayout(false);
+            this.group1.PerformLayout();
 
         }
 
 
-        //public List<string> testNamedRangeFind()
-        //{
-        //    Microsoft.Office.Interop.Excel.Workbook m_workbook;
-        //    var _1 = Globals.ThisWorkbook.Application;
-        //    m_workbook = _1.ActiveWorkbook;
-        //    int i = m_workbook.Names.Count;
-        //    List<string> wer = new List<string>();
-
-        //    if (i != 0)
-        //    {
-        //        foreach (Microsoft.Office.Interop.Excel.Name name in m_workbook.Names)
-        //        {
-        //            string value = name.Value;
-        //            //Sheet and Cell e.g. =Sheet1!$A$1 or =#REF!#REF! if refers to nothing
-        //            string linkName = name.Name;
-        //            //gives the name of the link e.g. sales
-        //            if (value == "Wer")
-        //            {
-        //                wer.Add(name.RefersToRange.Cells.get_Address(true, true, Microsoft.Office.Interop.Excel.XlReferenceStyle.xlA1));
-        //            }
-        //        }
-        //    }
-        //    return wer;
-        //}
-
         #endregion
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tab1;
-        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton button2;
         internal Microsoft.Office.Tools.Ribbon.RibbonToggleButton toggleButton1;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group2;
         internal Microsoft.Office.Tools.Ribbon.RibbonDropDown dropDown1;
         internal Microsoft.Office.Tools.Ribbon.RibbonCheckBox cbKGR;
+        internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonEditBox ebProjectName;
     }
 
 
